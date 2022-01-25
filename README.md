@@ -1,12 +1,23 @@
-# Anagrams
+# Persian Anagrams
 
-Finding anagrams for Persian words:
+> This repository is made for the NLP course project - Mar 2018.
 
-To find out if a permutation of the entered word is meaningful, I use an online Persian word finder: www.vajehyab.com
+**Dependencies:**
+- [Requests](https://docs.python-requests.org/en/latest/)
+- [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/)
 
-Input: a Persian word
+---
 
-Output: for every permutation, the result of Vajehyab is printed - two set of words is printed*
+There are two ways to find out if a permutation of an input word is meaningful:
+- Use a local dictionary
+- Search an online dictionary, 
 
-*Note: The result of the Vajehyab may not be 100% meaningful in Farsi because this site also searches through some Arabic sentences.
-So in the result we have a set of words ("100% Words") that we are almost sure they are meaningful, and we have some words ("50/50 Words") that Vajehyab finds something for them in its database but we are not sure if these words are really meaningful in Farsi.
+In this project, an [online Persian Dictionary](https://www.vajehyab.com/) is used.
+
+---
+
+- Input: a Persian word
+- Output: for each permutation, two sets of words are printed - `100% Words` and `50/50 Words`
+
+The results of the online dictionary used in this project may not be 100% meaningful in Farsi, since it also searches through some Arabic sentences.
+Therefore, in the results we have a set of words that we are almost sure they are meaningful (`100% Words`), and another set of words that the online dictionary was able to find some results for them, but we are not sure if these words are really meaningful in Farsi (`50/50 Words`).
